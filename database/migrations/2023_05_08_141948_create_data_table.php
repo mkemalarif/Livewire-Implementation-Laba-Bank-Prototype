@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('data', function (Blueprint $table) {
             $table->id();
+            $table->string('pemprov');
+            $table->enum('kehadiran', ['hadir', 'tidakHadir ']);
+            $table->bigInteger('modalOjk');
+            $table->bigInteger('modalNonOjk');
+            $table->bigInteger('jumlah');
+            $table->float('kepemilikan', 8, 2);
             $table->timestamps();
         });
     }

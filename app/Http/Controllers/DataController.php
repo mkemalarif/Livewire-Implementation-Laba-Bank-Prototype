@@ -36,11 +36,13 @@ class DataController extends Controller
         //
         $validate = $request->validate([
             "pemprov" => "required|max:255",
-            "modis" => "required|integer",
-            "modiz" => "required|integer",
+            "modalOjk" => "required|integer",
+            "modalNonOjk" => "required|integer",
             "jumlah" => "required|integer",
             "kepemilikan" => "required",
         ]);
+        $validate['kehadiran'] = 'tidakHadir';
+
 
         $data->create($validate);
 
@@ -75,11 +77,13 @@ class DataController extends Controller
         //
         $validate = $request->validate([
             "pemprov" => "required|max:255",
-            "modis" => "required|integer",
-            "modiz" => "required|integer",
+            "modalOjk" => "required|integer",
+            "modalNonOjk" => "required|integer",
             "jumlah" => "required|integer",
             "kepemilikan" => "required",
         ]);
+
+
 
         data::where('id', $data->id)->update($validate);
         return redirect('/')->with('success', 'data berhasil diupdate');

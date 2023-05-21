@@ -11,11 +11,11 @@
         DAN KOTA SE
         SULSELBAR & KOPERASI PT BANK SULSELBAR
         <br>
-        PERIODE: 30 NOVEMBER 2022</strong></p>
+        PERIODE: 30 April 2023</strong></p>
   </div>
 
-  @livewire('data-status')
 
+  @livewire('data-status')
 
 
 </div>

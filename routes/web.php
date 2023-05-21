@@ -2,8 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\DataStatus;
-use App\http\Controllers\DataController;
-use App\http\Controllers\ControllerHome;
+use App\Http\Controllers\DataController;
+use App\Http\Controllers\ControllerHome;
 
 /*
 |--------------------------------------------------------------------------

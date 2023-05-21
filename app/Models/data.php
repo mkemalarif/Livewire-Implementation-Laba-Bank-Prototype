@@ -9,7 +9,7 @@ class data extends Model
 {
     use HasFactory;
 
-    protected $table = 'xxx';
+    protected $table = 'data';
     protected $guarded = ['id'];
     public $timestamps = false;
 }
